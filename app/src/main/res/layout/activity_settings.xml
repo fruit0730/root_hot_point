@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="14dp"
+        android:paddingTop="6dp"
+        android:paddingRight="14dp"
+        android:paddingBottom="14dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnBack"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:background="@drawable/bg_btn"
+                android:minHeight="0dp"
+                android:minWidth="0dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:stateListAnimator="@null"
+                android:text="‹ 返回"
+                android:textColor="@color/accent"
+                android:textSize="13sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="热点设置"
+                android:textColor="@color/text"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="名称 (SSID)"
+            android:textColor="@color/sub"
+            android:textSize="11sp" />
+
+        <EditText
+            android:id="@+id/etSsid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_field"
+            android:imeOptions="actionDone"
+            android:inputType="text"
+            android:maxLines="1"
+            android:padding="8dp"
+            android:textColor="@color/text"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="密码（8-63 位）"
+            android:textColor="@color/sub"
+            android:textSize="11sp" />
+
+        <EditText
+            android:id="@+id/etPass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_field"
+            android:imeOptions="actionDone"
+            android:inputType="textVisiblePassword"
+            android:maxLines="1"
+            android:padding="8dp"
+            android:textColor="@color/text"
+            android:textSize="14sp" />
+
+        <CheckBox
+            android:id="@+id/cbSec"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="36dp"
+            android:text="WPA2 加密"
+            android:textColor="@color/text"
+            android:textSize="13sp" />
+
+        <CheckBox
+            android:id="@+id/cbHidden"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="36dp"
+            android:text="隐藏网络名称"
+            android:textColor="@color/text"
+            android:textSize="13sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="信道"
+            android:textColor="@color/sub"
+            android:textSize="11sp" />
+
+        <RadioGroup
+            android:id="@+id/rgChan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rb1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:minHeight="36dp"
+                android:text="1"
+                android:textColor="@color/text"
+                android:textSize="13sp" />
+
+            <RadioButton
+                android:id="@+id/rb6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:minHeight="36dp"
+                android:text="6"
+                android:textColor="@color/text"
+                android:textSize="13sp" />
+
+            <RadioButton
+                android:id="@+id/rb11"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:minHeight="36dp"
+                android:text="11"
+                android:textColor="@color/text"
+                android:textSize="13sp" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="无设备连接时自动关闭"
+            android:textColor="@color/sub"
+            android:textSize="11sp" />
+
+        <Spinner
+            android:id="@+id/spAutoOff"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:background="@drawable/bg_field" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="最大连接数（1-16）"
+            android:textColor="@color/sub"
+            android:textSize="11sp" />
+
+        <EditText
+            android:id="@+id/etMax"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_field"
+            android:imeOptions="actionDone"
+            android:inputType="number"
+            android:maxLines="1"
+            android:padding="8dp"
+            android:textColor="@color/text"
+            android:textSize="14sp" />
+
+        <CheckBox
+            android:id="@+id/cbBoot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="36dp"
+            android:text="开机自动开启"
+            android:textColor="@color/text"
+            android:textSize="13sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="芯片限制：热点与 Wi-Fi 不能同时开，开热点会自动关 Wi-Fi，共享 eSIM 流量。"
+            android:textColor="@color/sub"
+            android:textSize="10sp" />
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/bg_btn"
+            android:minHeight="0dp"
+            android:minWidth="0dp"
+            android:stateListAnimator="@null"
+            android:text="保存并应用"
+            android:textColor="@color/accent"
+            android:textSize="14sp" />
+    </LinearLayout>
+</ScrollView>

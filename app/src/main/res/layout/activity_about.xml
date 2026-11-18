@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingLeft="14dp"
+        android:paddingTop="6dp"
+        android:paddingRight="14dp"
+        android:paddingBottom="14dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnBack"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:background="@drawable/bg_btn"
+                android:minHeight="0dp"
+                android:minWidth="0dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:stateListAnimator="@null"
+                android:text="‹ 返回"
+                android:textColor="@color/accent"
+                android:textSize="13sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="关于"
+                android:textColor="@color/text"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="84dp"
+            android:layout_height="84dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_avatar_ring"
+            android:padding="4dp">
+
+            <TextView
+                android:id="@+id/tvAvatarPlaceholder"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_avatar_placeholder"
+                android:gravity="center"
+                android:text="CF"
+                android:textColor="#FFFFFFFF"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/ivAvatar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="头像"
+                android:scaleType="centerCrop"
+                android:visibility="gone" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="ClassFruit"
+            android:textColor="#FF4F8CFF"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/bg_pill"
+            android:paddingLeft="10dp"
+            android:paddingTop="2dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="2dp"
+            android:text="学生开发者"
+            android:textColor="#FF9CC4FF"
+            android:textSize="10sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:gravity="center"
+            android:text="一个热爱技术的高中生，喜欢探索编程的无限可能性。"
+            android:textColor="@color/sub"
+            android:textSize="11sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:background="#FF2A2A2E" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="版本"
+                android:textColor="@color/sub"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/tvVersion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="包名"
+                android:textColor="@color/sub"
+                android:textSize="10sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="cn.classfruit.hotpoint"
+                android:textColor="@color/text"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="热点引擎"
+                android:textColor="@color/sub"
+                android:textSize="10sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="hostapd + dnsmasq (root)"
+                android:textColor="@color/text"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnHome"
+                android:layout_width="0dp"
+                android:layout_height="36dp"
+                android:layout_marginRight="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_btn_blue"
+                android:minHeight="0dp"
+                android:minWidth="0dp"
+                android:stateListAnimator="@null"
+                android:text="个人主页"
+                android:textColor="#FF9CC4FF"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/btnGithub"
+                android:layout_width="0dp"
+                android:layout_height="36dp"
+                android:layout_marginLeft="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_btn_blue"
+                android:minHeight="0dp"
+                android:minWidth="0dp"
+                android:stateListAnimator="@null"
+                android:text="GitHub"
+                android:textColor="#FF9CC4FF"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnBili"
+                android:layout_width="0dp"
+                android:layout_height="36dp"
+                android:layout_marginRight="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_btn_blue"
+                android:minHeight="0dp"
+                android:minWidth="0dp"
+                android:stateListAnimator="@null"
+                android:text="Bilibili"
+                android:textColor="#FF9CC4FF"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/btnGitee"
+                android:layout_width="0dp"
+                android:layout_height="36dp"
+                android:layout_marginLeft="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_btn_blue"
+                android:minHeight="0dp"
+                android:minWidth="0dp"
+                android:stateListAnimator="@null"
+                android:text="Gitee"
+                android:textColor="#FF9CC4FF"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="© 2026 ClassFruit · classfruit.cn"
+            android:textColor="#FF6B6B70"
+            android:textSize="9sp" />
+    </LinearLayout>
+</ScrollView>
